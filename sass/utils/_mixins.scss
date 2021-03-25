@@ -3,6 +3,6 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @mixin btn-color {
-   background-image: linear-gradient($color-secondary 0%, $color-primary 100%);
+   background-image: linear-gradient(#ff79da 0%, #9356dc 100%);
 
 }

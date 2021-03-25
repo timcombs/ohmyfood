@@ -5,10 +5,12 @@
   padding: 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  text-decoration: none;
 }
 
 body {
   overflow: hidden;
+  font-family: roboto;
 }
 
 .logo {
@@ -28,9 +30,108 @@ body {
   width: 150px;
 }
 
+.navigation {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation h2 {
+  padding-bottom: 13px;
+}
+
+.navigation__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 16em;
+  width: 20em;
+  padding-left: 0.1em;
+  margin-top: 1em;
+}
+
+.navigation__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  border: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  outline: none;
+  height: 4.5em;
+  border-radius: 1.250em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navigation__button button:hover {
+  background-color: #e1d0f5;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.navigation__button button:hover i:hover {
+  color: #9356dc;
+}
+
+.navigation__button button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  right: 8em;
+  background-color: #9356dc;
+  border-radius: 2em;
+  color: white;
+  font-size: 0.9em;
+  height: 2em;
+  width: 2em;
+}
+
+.navigation__button button .circle__3 {
+  left: -5.28em;
+}
+
+.navigation__button i {
+  color: #939393;
+  position: absolute;
+  margin-right: 17em;
+}
+
 .location {
-  font-family: roboto;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   text-align: center;
   height: 19em;
 }
