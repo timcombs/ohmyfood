@@ -1,12 +1,3 @@
-.logo {
-        height: 3.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            width: 150px;
-        }
-}
 .navigation{
     margin-top: 2em;
     display: flex;
@@ -41,9 +32,11 @@
         transition:  all 0.4s ease-in-out;
         &:hover{
             background-color:#e1d0f5;
+            color: $color-background;
             transform: scale(1.07);
             i:hover {
                 color: #9356dc;
+                transition:  all 1s ease-in-out;
               }
         }
         span {
@@ -72,4 +65,83 @@
    position: absolute;
    margin-right: 17em;
   
+}
+
+main{
+     background-color: $light-gray;
+     margin-top: 5em;
+     
+
+    h2{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1em 1em;
+        margin: 0em 1em;
+    }
+    .card_section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 1em;
+        
+    
+        img{
+            object-fit: cover;
+            border-radius: 1em 1em 0em 0em;
+            height: 12em;
+            width: 21em;
+            
+        }
+
+
+    }
+    .card__Restaurants{
+        background-color:$color-background;
+        width: 21em;
+        border-radius: 1em 1em;
+        @include button-shadow;
+
+        span{
+            position: relative;
+            left: 20.4em;
+            bottom: 14em;
+            background-color: $color-tertiary;
+            color: darken( $color-tertiary, 40% );
+            padding: 0.5em 1.50em;
+            border-radius: 5px;
+            font-size: 0.8em;
+            font-weight: 500;
+            overflow: hidden;
+	        transition: 0.3s linear;
+    
+        }
+        &__text{
+            padding: 0em 1em;
+            line-height: 1.3em;
+        }
+        .fa-heart {
+            font-size: larger;
+            color: #939393;
+          
+            outline: none;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            bottom: 2em;
+            &:hover{
+              color:$color-Primary;
+              background: none;
+              background-image:$color-Primary;
+              background-clip: border-box;
+            
+             
+		    
+            }
+
+        }
+
+    }
+   
+   
 }

@@ -9,8 +9,11 @@
 }
 
 body {
-  overflow: hidden;
   font-family: roboto;
+}
+
+a {
+  color: black;
 }
 
 .logo {
@@ -28,106 +31,6 @@ body {
 
 .logo img {
   width: 150px;
-}
-
-.navigation {
-  margin-top: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navigation h2 {
-  padding-bottom: 13px;
-}
-
-.navigation__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 16em;
-  width: 20em;
-  padding-left: 0.1em;
-  margin-top: 1em;
-}
-
-.navigation__button button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f6f6f6;
-  border: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
-  outline: none;
-  height: 4.5em;
-  border-radius: 1.250em;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.navigation__button button:hover {
-  background-color: #e1d0f5;
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-
-.navigation__button button:hover i:hover {
-  color: #9356dc;
-}
-
-.navigation__button button span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  right: 8em;
-  background-color: #9356dc;
-  border-radius: 2em;
-  color: white;
-  font-size: 0.9em;
-  height: 2em;
-  width: 2em;
-}
-
-.navigation__button button .circle__3 {
-  left: -5.28em;
-}
-
-.navigation__button i {
-  color: #939393;
-  position: absolute;
-  margin-right: 17em;
 }
 
 .location {
@@ -205,5 +108,198 @@ body {
   -webkit-transform: scale(1.17);
           transform: scale(1.17);
   color: black;
+}
+
+.navigation {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation h2 {
+  padding-bottom: 13px;
+}
+
+.navigation__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 16em;
+  width: 20em;
+  padding-left: 0.1em;
+  margin-top: 1em;
+}
+
+.navigation__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  border: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  outline: none;
+  height: 4.5em;
+  border-radius: 1.250em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navigation__button button:hover {
+  background-color: #e1d0f5;
+  color: white;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.navigation__button button:hover i:hover {
+  color: #9356dc;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.navigation__button button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  right: 8em;
+  background-color: #9356dc;
+  border-radius: 2em;
+  color: white;
+  font-size: 0.9em;
+  height: 2em;
+  width: 2em;
+}
+
+.navigation__button button .circle__3 {
+  left: -5.28em;
+}
+
+.navigation__button i {
+  color: #939393;
+  position: absolute;
+  margin-right: 17em;
+}
+
+main {
+  background-color: #f6f6f6;
+  margin-top: 5em;
+}
+
+main h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 1em 1em 1em;
+  margin: 0em 1em;
+}
+
+main .card_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+
+main .card_section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em 1em 0em 0em;
+  height: 12em;
+  width: 21em;
+}
+
+main .card__Restaurants {
+  background-color: white;
+  width: 21em;
+  border-radius: 1em 1em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .card__Restaurants span {
+  position: relative;
+  left: 20.4em;
+  bottom: 14em;
+  background-color: #99e2d0;
+  color: #278870;
+  padding: 0.5em 1.50em;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+  overflow: hidden;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+main .card__Restaurants__text {
+  padding: 0em 1em;
+  line-height: 1.3em;
+}
+
+main .card__Restaurants .fa-heart {
+  font-size: larger;
+  color: #939393;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  bottom: 2em;
+}
+
+main .card__Restaurants .fa-heart:hover {
+  color: #9356dc;
+  background: none;
+  background-image: #9356dc;
+  background-clip: border-box;
 }
 /*# sourceMappingURL=main.css.map */
