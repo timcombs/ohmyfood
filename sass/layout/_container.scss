@@ -6,6 +6,7 @@
      flex-direction: column;
 
     h2{
+         margin: 1em 9em 0em 0em;
         padding-bottom: 13px;
     }
 }
@@ -17,6 +18,8 @@
 	width:20em;
 	padding-left:0.1em;
 	margin-top: 1em;
+    
+   
 
     button{
         display: flex;
@@ -39,12 +42,14 @@
                 transition:  all 1s ease-in-out;
               }
         }
+       
+
         span {
            display: flex;
            align-items: center;
            justify-content: center;
            position: relative;
-           right: 8em;
+           right: 7em;
             background-color:$color-Primary;
             border-radius: 2em;
             color:$color-background;
@@ -56,40 +61,48 @@
         .circle__3{
             left: -5.28em;
         } 
-       
+
+       .fa-store{
+           margin-right: 12em;
+         
+       }
 
     }
 }
+ #closer{
+         margin-right: 2em;
+ }
 .navigation__button i{
-    color:#939393;
+   color:#939393;
    position: absolute;
-   margin-right: 17em;
+   margin-right: 11em;
+   font-size: medium;
   
 }
 
 main{
      background-color: $light-gray;
      margin-top: 5em;
-     
+     padding: 20px;
 
     h2{
         display: flex;
-        align-items: center;
-        padding: 2em 1em 1em 1em;
-        margin: 0em 1em;
+        justify-content: center;
+        margin: 1em 9em 1em 0em;
     }
     .card_section{
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        margin-bottom: 1em;
+        padding-bottom:35px ;
+        
         
     
         img{
             object-fit: cover;
             border-radius: 1em 1em 0em 0em;
-            height: 12em;
+            height: 9.5em;
             width: 21em;
             
         }
@@ -99,49 +112,91 @@ main{
     .card__Restaurants{
         background-color:$color-background;
         width: 21em;
+        height: 14em;
         border-radius: 1em 1em;
         @include button-shadow;
+        
+        p{
+            font-weight: 300;
+        }
 
         span{
             position: relative;
-            left: 20.4em;
-            bottom: 14em;
+            left: 17.4em;
+            bottom: 9em;
             background-color: $color-tertiary;
-            color: darken( $color-tertiary, 40% );
-            padding: 0.5em 1.50em;
+            color: darken( $color-tertiary, 45% );
+            padding: 0.4em 1.50em;
             border-radius: 5px;
-            font-size: 0.8em;
+            font-size: 0.9em;
             font-weight: 500;
-            overflow: hidden;
-	        transition: 0.3s linear;
-    
+        
         }
         &__text{
-            padding: 0em 1em;
-            line-height: 1.3em;
+            margin: 5px 14px;
+            line-height: 1.40em;
+ 
+           &__heigth{
+            margin: -15px 14px;
+            line-height: 1.40em;
+
+           }
+           
         }
-        .fa-heart {
-            font-size: larger;
-            color: #939393;
-          
-            outline: none;
-            display: flex;
-            justify-content: flex-end;
+        .fa-heart{
             position: relative;
-            bottom: 2em;
-            &:hover{
-              color:$color-Primary;
-              background: none;
-              background-image:$color-Primary;
-              background-clip: border-box;
+            left: 11em;
+            bottom: 1em;
+            font-size: 25px;
+            font-weight: 300;
             
-             
-		    
-            }
 
+         &--full {
+            color: transparent;
+            transform: scale(0.3);
+            transition: transform 300ms;
+            
+            &:hover {
+                 color: #9356dc;
+                transform: scale(0.86);
+                background-clip: text;
+                
+            }
+         }
         }
 
+        
     }
    
    
+}
+
+footer {
+	background-color: darken( $color-background, 80% );
+    color: $color-background;
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		height: 13.5em;
+		margin-left: 2em;
+        color: $color-background;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+       
+        i {
+        
+            margin-right: 0.75em;
+        }
+        p {
+            margin: 1em 0em ;
+            font-family: $font-secondary;
+            font-size: 1.2em;
+           
+        }
+	}
+	
 }

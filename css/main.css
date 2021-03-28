@@ -128,6 +128,7 @@ a {
 }
 
 .navigation h2 {
+  margin: 1em 9em 0em 0em;
   padding-bottom: 13px;
 }
 
@@ -194,7 +195,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  right: 8em;
+  right: 7em;
   background-color: #9356dc;
   border-radius: 2em;
   color: white;
@@ -207,26 +208,35 @@ a {
   left: -5.28em;
 }
 
+.navigation__button button .fa-store {
+  margin-right: 12em;
+}
+
+#closer {
+  margin-right: 2em;
+}
+
 .navigation__button i {
   color: #939393;
   position: absolute;
-  margin-right: 17em;
+  margin-right: 11em;
+  font-size: medium;
 }
 
 main {
   background-color: #f6f6f6;
   margin-top: 5em;
+  padding: 20px;
 }
 
 main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2em 1em 1em 1em;
-  margin: 0em 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 9em 1em 0em;
 }
 
 main .card_section {
@@ -243,63 +253,108 @@ main .card_section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 1em;
+  padding-bottom: 35px;
 }
 
 main .card_section img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1em 1em 0em 0em;
-  height: 12em;
+  height: 9.5em;
   width: 21em;
 }
 
 main .card__Restaurants {
   background-color: white;
   width: 21em;
+  height: 14em;
   border-radius: 1em 1em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+main .card__Restaurants p {
+  font-weight: 300;
+}
+
 main .card__Restaurants span {
   position: relative;
-  left: 20.4em;
-  bottom: 14em;
+  left: 17.4em;
+  bottom: 9em;
   background-color: #99e2d0;
-  color: #278870;
-  padding: 0.5em 1.50em;
+  color: #217460;
+  padding: 0.4em 1.50em;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 500;
-  overflow: hidden;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
 }
 
 main .card__Restaurants__text {
-  padding: 0em 1em;
-  line-height: 1.3em;
+  margin: 5px 14px;
+  line-height: 1.40em;
+}
+
+main .card__Restaurants__text__heigth {
+  margin: -15px 14px;
+  line-height: 1.40em;
 }
 
 main .card__Restaurants .fa-heart {
-  font-size: larger;
-  color: #939393;
-  outline: none;
+  position: relative;
+  left: 11em;
+  bottom: 1em;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+main .card__Restaurants .fa-heart--full {
+  color: transparent;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+main .card__Restaurants .fa-heart--full:hover {
+  color: #9356dc;
+  -webkit-transform: scale(0.86);
+          transform: scale(0.86);
+  background-clip: text;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+}
+
+footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
-  bottom: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5em;
+  height: 13.5em;
+  margin-left: 2em;
+  color: white;
 }
 
-main .card__Restaurants .fa-heart:hover {
-  color: #9356dc;
-  background: none;
-  background-image: #9356dc;
-  background-clip: border-box;
+footer .container a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .container i {
+  margin-right: 0.75em;
+}
+
+footer .container p {
+  margin: 1em 0em;
+  font-family: shrikhand;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=main.css.map */
