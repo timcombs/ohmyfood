@@ -143,33 +143,32 @@ main{
            }
            
         }
-        .fa-heart{
-            position: relative;
-            left: 11em;
-            bottom: 1em;
-            font-size: 25px;
-            font-weight: 300;
-            
-
-         &--full {
-            color: transparent;
-            transform: scale(0.3);
-            transition: transform 300ms;
-            
-            &:hover {
-                 color: #9356dc;
-                transform: scale(0.86);
-                background-clip: text;
-                
-            }
-         }
-        }
-
         
     }
-   
+    
    
 }
+.heart-section{
+   margin-top: -2em;
+
+   
+   
+   .icon--full{
+    color: #9356dc;
+   }
+}
+.fa-heart{
+    position: absolute;
+    left: 14em;
+    font-size: 1.5em;
+    cursor: pointer;
+
+    &:hover{
+        color: #9356dc;
+    }
+    
+}
+   
 
 footer {
 	background-color: darken( $color-background, 80% );

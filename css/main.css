@@ -88,8 +88,8 @@ a {
   font-size: 1em;
   height: 3em;
   color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(#ff79da 0%, #9356dc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
   text-align: center;
   outline: none;
   border: 0px solid #1c6ea4;
@@ -299,29 +299,23 @@ main .card__Restaurants__text__heigth {
   line-height: 1.40em;
 }
 
-main .card__Restaurants .fa-heart {
-  position: relative;
-  left: 11em;
-  bottom: 1em;
-  font-size: 25px;
-  font-weight: 300;
+.heart-section {
+  margin-top: -2em;
 }
 
-main .card__Restaurants .fa-heart--full {
-  color: transparent;
-  -webkit-transform: scale(0.3);
-          transform: scale(0.3);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
-}
-
-main .card__Restaurants .fa-heart--full:hover {
+.heart-section .icon--full {
   color: #9356dc;
-  -webkit-transform: scale(0.86);
-          transform: scale(0.86);
-  background-clip: text;
+}
+
+.fa-heart {
+  position: absolute;
+  left: 14em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  color: #9356dc;
 }
 
 footer {
