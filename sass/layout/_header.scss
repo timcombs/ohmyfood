@@ -1,8 +1,6 @@
 .logo {
     height: 3.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     img {
         width: 150px;
     }
@@ -12,9 +10,7 @@
 	text-align: center;
 	height: 19em;
     &__nav{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         background-color:$dark-gray;
         border:  0.1em inset $color-background;
         height: 2.5em;
@@ -24,9 +20,7 @@
 
     }
     &__menu{
-        display: flex;
-		justify-content: center;
-		align-items: center;
+        @include flex-center;
 		flex-direction: column;
 		justify-content: space-evenly;
 		height: 15em;

@@ -1,9 +1,7 @@
 .navigation{
     margin-top: 2em;
-    display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
+    @include flex-center;
+    flex-direction: column;
 
     h2{
          margin: 1em 9em 0em 0em;
@@ -22,9 +20,7 @@
    
 
     button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         background-color: $light-gray;
         border: $color-background;
        @include button-shadow;
@@ -45,9 +41,7 @@
        
 
         span {
-           display: flex;
-           align-items: center;
-           justify-content: center;
+           @include flex-center;
            position: relative;
            right: 7em;
             background-color:$color-Primary;
@@ -73,7 +67,7 @@
          margin-right: 2em;
  }
 .navigation__button i{
-   color:#939393;
+   color:$color-icon;
    position: absolute;
    margin-right: 11em;
    font-size: medium;
@@ -98,6 +92,7 @@ main{
         padding-bottom:35px ;
         
         
+        
     
         img{
             object-fit: cover;
@@ -115,6 +110,7 @@ main{
         height: 14em;
         border-radius: 1em 1em;
         @include button-shadow;
+        position: relative;
         
         p{
             font-weight: 300;
@@ -150,23 +146,26 @@ main{
 }
 .heart-section{
    margin-top: -2em;
-
-   
    
    .icon--full{
-    color: #9356dc;
+    color:white;
    }
+   &:hover .icon--full{
+    color: #9356dc;
+    transition: color 0.9s; 
+   }
+   &:hover .icon--empty{
+    color: #9356dc;
+
+   }
+
+
 }
 .fa-heart{
     position: absolute;
-    left: 14em;
+    left: 12em;
     font-size: 1.5em;
     cursor: pointer;
-
-    &:hover{
-        color: #9356dc;
-    }
-    
 }
    
 

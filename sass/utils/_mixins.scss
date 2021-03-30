@@ -6,3 +6,8 @@
    background: linear-gradient(#ff79da 0%, #9356dc 100%);
 
 }
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
