@@ -1,0 +1,63 @@
+main{
+    background-color: $light-gray;
+    margin-top: 5em;
+    padding: 20px;
+
+   h2{
+       display: flex;
+       justify-content: center;
+       margin: 1em 9em 1em 0em;
+   }
+   .card_section{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-direction: column;
+       padding-bottom:35px ;
+   
+       img{
+           object-fit: cover;
+           border-radius: 1em 1em 0em 0em;
+           height: 9.5em;
+           width: 21em;
+       }
+
+   }
+   .card__Restaurants{
+       background-color:$color-background;
+       width: 21em;
+       height: 14em;
+       border-radius: 1em 1em;
+       @include button-shadow;
+       position: relative;
+       
+       p{
+           font-weight: 300;
+       }
+
+       span{
+        position: relative;
+        left: 17.4em;
+        bottom: 9em;
+        background-color: $color-tertiary;
+        color: darken( $color-tertiary, 45% );
+        padding: 0.4em 1.50em;
+        border-radius: 5px;
+        font-size: 0.9em;
+        font-weight: 500;
+    
+       }
+       &__text{
+           margin: 5px 14px;
+           line-height: 1.40em;
+
+          &__heigth{
+           margin: -15px 14px;
+           line-height: 1.40em;
+
+          }
+          
+       }
+       
+   }
+}

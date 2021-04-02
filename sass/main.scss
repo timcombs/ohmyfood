@@ -1,10 +1,16 @@
+ //Utils//
 @import "./utils/variable";
-@import "./utils/functions";
 @import "./utils/mixins";
 
+//components//
+@import "./components/nav-buttons";
+@import "./components/card";
+@import "./components/icon";
+
+//layout//
 @import "./layout/base";
 @import "./layout/header";
-@import "./layout/menu";
-@import "./layout/container";
-@import "./layout/buttons";
+@import "./layout/footer";
 
+//pages//
+@import "./pages/content.scss";

@@ -1,0 +1,73 @@
+
+.navigation{
+    margin-top: 2em;
+    @include flex-center;
+    flex-direction: column;
+
+    h2{
+         margin: 1em 9em 0em 0em;
+        padding-bottom: 13px;
+    }
+}
+.navigation__button{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 16em;
+	width:20em;
+	padding-left:0.1em;
+	margin-top: 1em;
+
+    button{
+        @include flex-center;
+        background-color: $light-gray;
+        border: $color-background;
+       @include button-shadow;
+        cursor: pointer;
+        outline: none;
+        height: 4.5em;
+		border-radius: 1.250em;
+        transition:  all 0.4s ease-in-out;
+        &:hover{
+            background-color:#e1d0f5;
+            color: $color-background;
+            transform: scale(1.07);
+            i:hover {
+                color: #9356dc;
+                transition:  all 1s ease-in-out;
+              }
+        }
+       
+        span {
+           @include flex-center;
+           position: relative;
+           right: 7em;
+            background-color:$color-Primary;
+            border-radius: 2em;
+            color:$color-background;
+            font-size: 0.9em;
+            height: 2em;
+            width: 2em;
+        
+		}
+        .circle__3{
+            left: -5.28em;
+        } 
+
+       .fa-store{
+           margin-right: 12em;
+         
+       }
+
+    }
+}
+ #closer{
+         margin-right: 2em;
+ }
+.navigation__button i{
+   color:$color-icon;
+   position: absolute;
+   margin-right: 11em;
+   font-size: medium;
+  
+}

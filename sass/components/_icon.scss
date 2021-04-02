@@ -1,0 +1,25 @@
+.heart-section{
+    margin-top: -2em;
+    
+    .icon--full{
+     color:white;
+    }
+    &:hover .icon--full{
+      background: linear-gradient(#ff79da 0%, #9356dc 100%);
+      background-clip: inherit;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: color 0.9s; 
+    }
+    &:hover .icon--empty{
+      opacity: 0;
+      transition-duration: 0.5s;
+    }
+  }
+  .fa-heart{
+     position: absolute;
+     left: 12em;
+     font-size: 1.5em;
+     cursor: pointer;
+  }
+  
