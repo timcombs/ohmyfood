@@ -2,15 +2,15 @@
 @import "./utils/variable";
 @import "./utils/mixins";
 
-//components//
-@import "./components/nav-buttons";
-@import "./components/card";
-@import "./components/icon";
-
 //layout//
 @import "./layout/base";
 @import "./layout/header";
 @import "./layout/footer";
+
+//components//
+@import "./components/nav-buttons";
+@import "./components/card";
+@import "./components/icon";
 
 //pages//
 @import "./pages/content.scss";

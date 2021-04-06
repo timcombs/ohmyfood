@@ -16,10 +16,18 @@
       transition-duration: 0.5s;
     }
   }
-  .fa-heart{
-     position: absolute;
-     left: 12em;
-     font-size: 1.5em;
-     cursor: pointer;
+.fa-heart{
+    position: absolute;
+    left: 12em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.arrow{
+  position: relative;
+  right: 4em;
+  font-size:17px;
+  font-weight: 400;
+  &:hover{
+    color: $color-tertiary;
   }
-  
+}

@@ -1,8 +1,11 @@
 .logo {
     height: 3.5em;
     @include flex-center;
+   
+    
     img {
         width: 150px;
+        margin: 1em;
     }
 }
 .location {
@@ -34,22 +37,194 @@
             font-size: 1em;
             height: 3em;
             color: $color-background;
-             @include btn-color;
-             text-align: center;
-             outline: none;
-             border: 0px solid rgb(28, 110, 164);
-             border-radius: 3rem;
-             width: 15em;
-             cursor: pointer;
-             @include button-shadow;
-             transition: all 1s ease-in-out;
-             &:hover {
+            @include btn-color;
+            text-align: center;
+            outline: none;
+            border: 0px solid rgb(28, 110, 164);
+            border-radius: 3rem;
+            width: 15em;
+            cursor: pointer;
+            @include button-shadow;
+            transition: all 1s ease-in-out;
+                &:hover {
                 @include button-shadow;
                 transform: scale(1.17);
                 color: black;
-            }
-			
+
+                }
+        }
+    }
+}
+
+.wrap{
+    position: absolute;
+    top: 3.50em;
+    img{
+        object-fit:cover;
+        width: 27em; 
+        right: 2em;
+    }
+}
+.menu__content{
+    background-color:$light-gray;
+    border-radius: 2.5em 2.5em 0 0;
+    width: 23em;
+    height: 79em;
+    position: relative;
+    top: 8em;
+    left: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8em;
+
+
+    .menu__header{
+        display: flex;
+        align-items: center;
+        
+        h2{
+            white-space: nowrap;
+            font-family: $font-secondary;
+            font-size: 1.4em;
+            font-weight: 300;
+            margin-right: 5em;
+        
+        }
+        
+
+    }
+    .menu__subtitle{
+        position: relative;
+        margin: 1em 0em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        h4{
+            white-space: nowrap;
+            font-weight: 400;
+            border-bottom: 3px $color-tertiary solid;
+            width: 33px;
+            margin: 1em 0em;
         }
 
+    }
+    .menu__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+        animation: fade-in 1300ms forwards;
+    
+     
+        .menu__card{
+            background-color: $color-background;
+            border-radius: 1.20em;
+            @include button-shadow;
+            height: 5em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          
+        
+            
+            h3{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                transition: 0.3s linear;
+                margin: 12px;
+                &:hover{
+                    transition: 0.3s linear;
+                    margin-right: 5em;
+                }
+            }  
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                transition: 0.5s linear;
+                margin: 12px; 
+                &:hover{
+                    transition: 0.3s linear;
+                    margin-right: 5em;
+                }
+
+            }
+        } 
+        
+    }
+    @keyframes fade-in {
+        0%{
+            opacity: 0;
+            margin-top: 40px;
+        }
+        100%{
+            opacity: 1;
+            margin-top: 0;
+        }
+        
+    }
+}
+.menu__price{
+   position: relative;
+   left: 19em;
+   bottom: 2em;
+   &:hover{
+    transition: 0.5s linear;
+    margin-right: 5em;
+   
+   }
+}
+.check {
+	color: $color-background;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	transform: rotate(-90deg);
+	transition-duration: 0.5s;
+    &:hover {
+        transform: rotate(-360deg);
+        transition-duration: 0.5s;
+    }
+}
+.rotate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    position: relative;
+	bottom: 6em;
+    left: 16em;
+    right: 0;
+   
+    background-color: $color-tertiary;
+    border-radius: 0 1.20em 1.20em 0;
+    height:5em;
+    overflow: hidden;
+	transition: 0.3s linear;
+	&:hover{
+        width: 5em;
+	    transition: 0.3s linear;
+    }
+}
+
+.menu__button{
+    position: relative;
+    left: 5em;
+    top: 3em;
+    font-size: 1em;
+    height: 3em;
+    color: $color-background;
+    @include btn-color;
+    text-align: center;
+    outline: none;
+    border: 0px solid rgb(28, 110, 164);
+    border-radius: 3rem;
+    width: 12em;
+    cursor: pointer;
+    @include button-shadow;
+    transition: all 1s ease-in-out;
+    &:hover {
+        @include button-shadow;
+        transform: scale(1.25);
     }
 }

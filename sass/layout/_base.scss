@@ -9,6 +9,10 @@
 body {
     font-family: $font-primary;
 }
+
 a{
     color: black;
+}
+.center-content{
+    @include flex-center;
 }
