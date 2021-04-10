@@ -55,7 +55,10 @@
         }
     }
 }
-
+.center-content{
+    @include flex-center;
+    
+}
 .wrap{
     position: absolute;
     top: 3.50em;
@@ -63,149 +66,138 @@
         object-fit:cover;
         width: 27em; 
         right: 2em;
+        animation: fade-in 2000ms forwards;
     }
 }
 .menu__content{
     background-color:$light-gray;
-    border-radius: 2.5em 2.5em 0 0;
-    width: 23em;
+    border-radius: 2.6em 2.6em 0 0;
+    width: 24.10em;
     height: 79em;
     position: relative;
-    top: 8em;
-    left: 1em;
+    top: 14em;
+    margin:0 auto;
+    margin-bottom: 14em;
+    
+}
+
+
+.menu__header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    h2{
+        white-space: nowrap;
+        font-family: $font-secondary;
+        font-size: 1.4em;
+        font-weight: 300;
+        margin-right: 5em;
+    
+    }
+
+}
+.menu__subtitle{
+    margin: 1em 0em;
+    white-space: nowrap;
+    animation: fade-in 5s forwards;
+
+    h4{
+        white-space: nowrap;
+        font-weight: 400;
+        border-bottom: 3px $color-tertiary solid;
+        width: 33px;
+        margin: 1em 0em;
+    }
+
+}
+.menu__section{
     display: flex;
     flex-direction: column;
-    margin-bottom: 8em;
-
-
-    .menu__header{
-        display: flex;
-        align-items: center;
-        
-        h2{
-            white-space: nowrap;
-            font-family: $font-secondary;
-            font-size: 1.4em;
-            font-weight: 300;
-            margin-right: 5em;
-        
-        }
-        
-
-    }
-    .menu__subtitle{
-        position: relative;
-        margin: 1em 0em;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-
-        h4{
-            white-space: nowrap;
-            font-weight: 400;
-            border-bottom: 3px $color-tertiary solid;
-            width: 33px;
-            margin: 1em 0em;
-        }
-
-    }
-    .menu__section{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1em;
-        animation: fade-in 1300ms forwards;
+    justify-content: space-between;
+    gap: 1.5em;
     
-     
-        .menu__card{
-            background-color: $color-background;
-            border-radius: 1.20em;
-            @include button-shadow;
-            height: 5em;
-            text-overflow: ellipsis;
+    .menu__card{
+        display: flex;
+        justify-content: space-between;
+        height: 5em;
+        background-color: $color-background;
+        border-radius: 1.20em;
+        @include button-shadow;
+        overflow: hidden;
+        white-space: none;
+        cursor: pointer;
+      
+    } 
+    .text-wrap {
+        flex: none;
+        width: 74%;
+        margin: 1em 0em 1em 1em;
+        line-height: 1.5em;
+        transition: width 500ms ease-in-out;
+        &:hover{
+            transition: width 500ms ease-in-out;
+            width: 56%;
+        }
+         
+        p{
+         overflow: hidden;
+         white-space: nowrap;
+         &:hover{
+            overflow: hidden;
             white-space: nowrap;
-          
-        
-            
-            h3{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                transition: 0.3s linear;
-                margin: 12px;
-                &:hover{
-                    transition: 0.3s linear;
-                    margin-right: 5em;
-                }
-            }  
-            p{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                transition: 0.5s linear;
-                margin: 12px; 
-                &:hover{
-                    transition: 0.3s linear;
-                    margin-right: 5em;
-                }
-
-            }
-        } 
-        
-    }
-    @keyframes fade-in {
-        0%{
-            opacity: 0;
-            margin-top: 40px;
+            text-overflow: ellipsis;
+         }
         }
-        100%{
-            opacity: 1;
-            margin-top: 0;
-        }
-        
     }
 }
 .menu__price{
-   position: relative;
-   left: 19em;
-   bottom: 2em;
-   &:hover{
-    transition: 0.5s linear;
-    margin-right: 5em;
-   
-   }
-}
-.check {
-	color: $color-background;
-	border-radius: 50%;
-	font-size: 1.5rem;
-	transform: translate(-50%, -50%);
-	white-space: nowrap;
-	transform: rotate(-90deg);
-	transition-duration: 0.5s;
-    &:hover {
-        transform: rotate(-360deg);
-        transition-duration: 0.5s;
+    text-align: center;
+    flex: none;
+    width: 22%;
+
+    b{
+       position: relative;
+       top: 2.5em;
     }
 }
+
 .rotate {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     position: relative;
-	bottom: 6em;
-    left: 16em;
     right: 0;
-   
+    width: 30%;
     background-color: $color-tertiary;
     border-radius: 0 1.20em 1.20em 0;
-    height:5em;
-    overflow: hidden;
-	transition: 0.3s linear;
+    transition: 500ms ease-in-out;
 	&:hover{
-        width: 5em;
-	    transition: 0.3s linear;
+        width: 10%;
+	    transition: width 500ms ease-in-out;
     }
 }
+    .check {
+        cursor: pointer;
+        position: absolute;
+        color: $color-background;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        transition: .5s linear;
+        transform: rotate(360deg);
+        animation: check .5s linear ;
+        &:hover{
+            transition: .5s linear;
+            transform:rotate(360deg);
+        }
+    }
+    @keyframes check {
+        0% { transform: rotate(0deg); }
+        
+        100% { transform: rotate(360deg); }
+    }
+
+
 
 .menu__button{
     position: relative;

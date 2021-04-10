@@ -1,4 +1,4 @@
-@keyframes loader {
+/*@keyframes loader {
 	0%, 10%, 100% {
 		width: 80px;
 		height: 80px;
@@ -73,4 +73,21 @@
 
 body {
   background-color:$color-background;
+}*/
+.menu__section{
+	animation: fade-in 10s forwards;
+
+	
+}
+@keyframes fade-in {
+	0%{
+		opacity: 0;
+		margin-top: 50px;
+		animation-iteration-count: 3s;
+	}
+	100%{
+		opacity: 1;
+		margin-top: 0;
+	}
+	
 }
