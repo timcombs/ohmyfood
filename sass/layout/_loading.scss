@@ -75,7 +75,7 @@ body {
   background-color:$color-background;
 }*/
 .menu__section{
-	animation: fade-in 10s forwards;
+	animation: fade-in 7s forwards;
 
 	
 }
@@ -83,7 +83,7 @@ body {
 	0%{
 		opacity: 0;
 		margin-top: 50px;
-		animation-iteration-count: 3s;
+		
 	}
 	100%{
 		opacity: 1;
