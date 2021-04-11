@@ -145,11 +145,11 @@ a {
   background-color: #f6f6f6;
   border-radius: 2.6em 2.6em 0 0;
   width: 24.10em;
-  height: 79em;
   position: relative;
   top: 14em;
   margin: 0 auto;
   margin-bottom: 14em;
+  padding-bottom: 5em;
 }
 
 .menu__header {
