@@ -3,15 +3,19 @@
     @include flex-center;
     flex-direction: column;
 
-    h2{
+     h2{
          margin: 1em 9em 0em 0em;
         padding-bottom: 13px;
+        &:hover{
+            color: $color-Primary;
+        }
     }
 }
 .navigation__button{
     display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+    position: relative;
 	height: 16em;
 	width:20em;
 	padding-left:0.1em;
@@ -27,14 +31,16 @@
         height: 4.5em;
 		border-radius: 1.250em;
         transition:  all 0.4s ease-in-out;
+        
         &:hover{
             background-color:#e1d0f5;
             color: $color-background;
             transform: scale(1.07);
-            i:hover {
-                color: #9356dc;
-                transition:  all 1s ease-in-out;
-            }
+            
+        }
+        &:hover i {
+            color: #9356dc;
+            
         }
        
         span {
@@ -68,3 +74,5 @@
    font-size: medium;
   
 }
+
+

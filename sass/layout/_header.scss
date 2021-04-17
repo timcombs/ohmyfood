@@ -8,10 +8,29 @@
         margin: 1em;
     }
 }
+.center-content{
+    @include flex-center;
+    
+}
+.wrap{
+    position: absolute;
+    top: 3.50em;
+    img{
+        object-fit:cover;
+        width: 27em; 
+        right: 2em;
+        animation: fade-in 2000ms forwards;
+    }
+}
+#image-height{
+    height: 18em;
+}
+
 .location {
 	background-color: $light-gray;
 	text-align: center;
 	height: 19em;
+
     &__nav{
         @include flex-center;
         background-color:$dark-gray;
@@ -20,8 +39,8 @@
         i{
             margin-right: 14px;
         }
-
     }
+
     &__menu{
         @include flex-center;
 		flex-direction: column;
@@ -32,7 +51,11 @@
         h3 {
 			font-weight: 400;
 			font-size: 1.2em;
+            &:hover{
+                color: $color-Primary;
+            }
         }
+
         button{
             font-size: 1em;
             height: 3em;
@@ -55,23 +78,7 @@
         }
     }
 }
-.center-content{
-    @include flex-center;
-    
-}
-.wrap{
-    position: absolute;
-    top: 3.50em;
-    img{
-        object-fit:cover;
-        width: 27em; 
-        right: 2em;
-        animation: fade-in 2000ms forwards;
-    }
-}
-#image-height{
-    height: 18em;
-}
+
 .menu__content{
     background-color:$light-gray;
     border-radius: 2.6em 2.6em 0 0;
@@ -81,17 +88,17 @@
     top: 14em;
     margin:0 auto;
     margin-bottom: 14em;
-    padding-bottom:5em ;
+    padding:5em 2em ;
     
 }
-
-
+//menu subheader seaction//
 .menu__header{
     display: flex;
     align-items: center;
     position: relative;
     
     h2{
+        position: absolute;
         white-space: nowrap;
         font-family: $font-secondary;
         font-size: 1.4em;
@@ -102,6 +109,7 @@
     }
 
 }
+
 .menu__subtitle{
     margin: 1em 0em 3em;
     white-space: nowrap;
@@ -117,99 +125,8 @@
     }
 
 }
-.menu__section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.5em;
-    
-    .menu__card{
-        display: flex;
-        justify-content: space-between;
-        height: 5em;
-        background-color: $color-background;
-        border-radius: 1.20em;
-        @include button-shadow;
-        overflow: hidden;
-        white-space: nowrap;
-        cursor: pointer;
-      
-    } 
-    #card-height{
-        line-height: 100%;
-    }
-    .text-wrap {
-        flex: none;
-        width: 74%;
-        margin: 1em 0em 1em 1em;
-        line-height: 1.5em;
-        transition: width 500ms ease-in-out;
-        &:hover{
-            transition: width 500ms ease-in-out;
-            width: 56%;
-        }
-         
-        p{
-         overflow: hidden;
-         white-space: nowrap;
-         &:hover{
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-         }
-        }
-    }
-}
-.menu__price{
-    text-align: center;
-    flex: none;
-    width: 22%;
 
-    b{
-       position: relative;
-       top: 2.5em;
-       transition: 0.3s linear;
-
-       &:hover{
-        margin-right: 4rem;
-        transition: 0.3s linear;
-       }
-    }
-}
-
-.rotate {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    position: relative;
-    right: 0;
-    width: 30%;
-    background-color: $color-tertiary;
-    border-radius: 0 1.20em 1.20em 0;
-    overflow: hidden;
-	transition: 0.3s ease-in-out;
-	&:hover{
-        width: 10em;
-        transition: 0.3s ease-in-out;
-    }
-}
-    .check {
-        color: $color-background;
-        border-radius: 50%;
-        font-size: 1.5em;
-        white-space: nowrap;
-        transform: translate(-50%, -50%);
-        transform: rotate(90deg);
-        transition:all 0.5s;
-        &:hover{
-            transform: rotate(360deg);
-			transition-duration: 0.5s;
-        }
-    }
-   
-
-
-
+//order button//
 .menu__button{
     position: relative;
     left: 5em;
@@ -221,7 +138,7 @@
     text-align: center;
     outline: none;
     border: 0px solid rgb(28, 110, 164);
-    border-radius: 3rem;
+    border-radius: 3em;
     width: 12em;
     cursor: pointer;
     @include button-shadow;

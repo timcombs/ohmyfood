@@ -13,4 +13,8 @@ body {
 a{
     color: black;
 }
-
+b{
+    &:hover{
+        color: $color-Primary;
+    }
+}

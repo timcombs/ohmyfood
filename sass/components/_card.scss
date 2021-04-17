@@ -7,6 +7,10 @@ main{
        display: flex;
        justify-content: center;
        margin: 1em 9em 1em 0em;
+       &:hover{
+        color: $color-Primary;
+    }
+       
    }
    .card_section{
        display: flex;
@@ -33,6 +37,9 @@ main{
        
        p{
            font-weight: 300;
+           &:hover{
+            color: $color-Primary;
+           }
        }
 
        span{
@@ -60,4 +67,96 @@ main{
        }
        
    }
+}
+
+.menu__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    
+    
+    .menu__card{
+        display: flex;
+        justify-content: space-between;
+        height: 5em;
+        background-color: $color-background;
+        border-radius: 1.20em;
+        @include button-shadow;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        position: relative;
+
+        .rotate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             position: relative;
+             right: 0;
+             width: 30%;
+             background-color: $color-tertiary;
+             border-radius: 0 1.20em 1.20em 0;
+             overflow: hidden;
+             transition: 500ms ease-in-out;
+        }
+        &:hover .rotate{
+            width: 10em;
+            transition: 500ms ease-in-out;
+        }
+
+        .check{
+            color: $color-background;
+            border-radius: 50%;
+            font-size: 1.5em;
+            white-space: nowrap;
+            transform: rotate(95deg);
+            transition: all 0.5s ;
+            
+        }
+
+        &:hover .check{
+            transform: rotate(-360deg);
+            transition:all 0.5s ;
+            
+
+        }
+      
+    } 
+    #card-height{
+        line-height: 100%;
+        font-size: medium;
+    }
+    .text-wrap {
+        flex: none;
+        width: 74%;
+        margin: 1em 0em 1em 1em;
+        line-height: 1.5em;
+        transition: width 500ms ease-in-out;
+        &:hover{
+            transition: width 500ms ease-in-out;
+            width: 56%;
+        }
+         
+        p{
+         overflow: hidden;
+         white-space: nowrap;
+         &:hover{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+         }
+        }
+    }
+}
+.menu__price{
+    text-align: center;
+    flex: none;
+    width: 22%;
+
+    b{
+       position: relative;
+       top: 2.5em;
+       transition: width 500ms ease-in-out;
+    }
 }
