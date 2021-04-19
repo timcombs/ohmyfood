@@ -15,12 +15,15 @@
 
 <body>
 
-  <div class="loader">
-    <span class="box"></span>
-    <span class="box"></span>
-    <span class="box"></span>
-    <span class="box"></span>
+  <div class="loader-container">
+    <div class="loader">
+      <span class="box"></span>
+      <span class="box"></span>
+      <span class="box"></span>
+      <span class="box"></span>
+    </div>
   </div>
+  
   <header>
    
     <a class="logo" href="#" id="home">
@@ -35,19 +38,17 @@
       <div class="location__menu">
         <h2>Book the menu you like</h2>
         <h3>Discover top-of-the-art restaurants we picked for you</h3>
-        <a href="#Restaurants">
-          <button class="explore-button">Explore our restaurants</button>
-        </a>
+        <button class="explore-button">Explore our restaurants</button>
       </div>
     </section>
 
     <nav class="navigation">
       <h2>How it works</h2>
-      <a href="#" class="navigation__button">
-        <button type="button_1"><span class="circle__1">1 </span><i class="fas fa-mobile-alt"></i><b id="closer">Chose a restaurant</b></button>
-        <button type="button_2"><span class="circle__2">2 </span><i class="fas fa-list"></i><b id="closer">Create your menu</b></button>
-        <button type="button_3"><span class="circle__3">3 </span><i class="fas fa-store"></i><b >Go enjoy it at the restaurant</b></button>
-      </a>
+      <div class="navigation__button">
+        <button type="button"><span class="circle__1">1 </span><i class="fas fa-mobile-alt"></i><b class="closer">Chose a restaurant</b></button>
+        <button type="button"><span class="circle__2">2 </span><i class="fas fa-list"></i><b class="closer">Create your menu</b></button>
+        <button type="button"><span class="circle__3">3 </span><i class="fas fa-store"></i><b >Go enjoy it at the restaurant</b></button>
+      </div>
     </nav>
 
   </header>

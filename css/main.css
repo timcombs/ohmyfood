@@ -1,88 +1,224 @@
-/*@keyframes loader {
-	0%, 10%, 100% {
-		width: 80px;
-		height: 80px;
-	}
-	65% {
-		width: 150px;
-		height: 150px;
-	}
-}
-@keyframes loaderBlock {
-	0%, 30% { 
-		transform: rotate(0);
-	}
-	55% {
-		background-color: $color-primary;
-	}
-	100% {
-		transform: rotate(90deg);
-
-	}
-}
-@keyframes loaderBlockInverse {
-	0%, 20% { 
-		transform: rotate(0);
-	}
-	55% {
-		background-color:$color-secondary;
-	}
-	100% {
-		transform: rotate(-90deg);
-	}
-}
 .loader {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 80px;
-	height: 80px;
-	transform: translate(-50%, -50%) rotate(45deg) translate3d(0,0,0);
-	animation: loader 1.1s infinite ease-in-out;
-	
-
-	span {
-		position: absolute;
-		display: block;
-		width: 40px;
-		height: 40px;
-		background-color: #7FFFD4;
-		animation: loaderBlock 1.1s infinite ease-in-out ;
-		
-
-		&:nth-child(1) {
-			top: 0;
-			left: 0;
-		}
-		&:nth-child(2) {
-			top: 0;
-			right: 0;
-			animation: loaderBlockInverse 1.1s infinite ease-in-out;
-		}
-		&:nth-child(3) {
-			bottom: 0;
-			left: 0;
-			animation: loaderBlockInverse 1.1s infinite ease-in-out;
-		}
-		&:nth-child(4) {
-			bottom: 0;
-			right: 0;
-		}
-	}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
+          transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
+  -webkit-animation: loader 1.1s infinite ease-in-out;
+          animation: loader 1.1s infinite ease-in-out;
+  z-index: 100;
 }
 
-body {
-  background-color:$color-background;
-}*/
-.menu__section {
-  -webkit-animation: fade-in 7s forwards;
-          animation: fade-in 7s forwards;
+.loader span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #7FFFD4;
+  -webkit-animation: loaderBlock 1.1s infinite ease-in-out;
+          animation: loaderBlock 1.1s infinite ease-in-out;
+}
+
+.loader span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.loader span:nth-child(2) {
+  top: 0;
+  right: 0;
+  -webkit-animation: loaderBlockInverse 1.1s infinite ease-in-out;
+          animation: loaderBlockInverse 1.1s infinite ease-in-out;
+}
+
+.loader span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  -webkit-animation: loaderBlockInverse 1.1s infinite ease-in-out;
+          animation: loaderBlockInverse 1.1s infinite ease-in-out;
+}
+
+.loader span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.loader-container {
+  background-color: white;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 110vh;
+  opacity: 1;
+  -webkit-animation: disappear 3000ms forwards;
+          animation: disappear 3000ms forwards;
+}
+
+.header {
+  position: relative;
+  z-index: 50;
+}
+
+.main {
+  position: relative;
+  z-index: 52;
+}
+
+.footer {
+  position: relative;
+  z-index: 53;
+}
+
+.menu__subtitle {
+  -webkit-animation: fade-in 1000ms forwards;
+          animation: fade-in 1000ms forwards;
+}
+
+.menu__header {
+  -webkit-animation: fade-out 10s;
+          animation: fade-out 10s;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loader {
+  0%, 10%, 100% {
+    width: 80px;
+    height: 80px;
+  }
+  65% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes loader {
+  0%, 10%, 100% {
+    width: 80px;
+    height: 80px;
+  }
+  65% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@-webkit-keyframes loaderBlock {
+  0%, 30% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  55% {
+    background-color: #9356dc;
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes loaderBlock {
+  0%, 30% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  55% {
+    background-color: #9356dc;
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes loaderBlockInverse {
+  0%, 20% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  55% {
+    background-color: #ff79da;
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+@keyframes loaderBlockInverse {
+  0%, 20% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  55% {
+    background-color: #ff79da;
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
 }
 
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
-    margin-top: 50px;
+    margin-top: 90px;
+  }
+  20% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.90;
   }
   100% {
     opacity: 1;
@@ -93,7 +229,13 @@ body {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    margin-top: 50px;
+    margin-top: 90px;
+  }
+  20% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.90;
   }
   100% {
     opacity: 1;
@@ -206,7 +348,7 @@ body {
   margin-right: 12em;
 }
 
-#closer {
+.closer {
   margin-right: 2em;
 }
 
@@ -520,6 +662,11 @@ b:hover {
           justify-content: center;
 }
 
+.center-content .logo {
+  -webkit-animation: fade-out 10s;
+          animation: fade-out 10s;
+}
+
 .wrap {
   position: absolute;
   top: 3.50em;
@@ -528,7 +675,7 @@ b:hover {
 .wrap img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 27em;
+  width: 100%;
   right: 2em;
   -webkit-animation: fade-in 2000ms forwards;
           animation: fade-in 2000ms forwards;
@@ -714,6 +861,7 @@ footer .container {
   height: 13.5em;
   margin-left: 2em;
   color: white;
+  position: relative;
 }
 
 footer .container a {
@@ -770,7 +918,7 @@ footer .container p {
     width: 4.5em;
   }
   .menu__content {
-    width: 93%;
+    width: 45em;
   }
   .menu__section {
     display: -webkit-box;
@@ -788,7 +936,8 @@ footer .container p {
     padding-top: 2em;
   }
   .menu__button {
-    margin-left: 10em;
+    position: relative;
+    left: 15em;
   }
   .menu__header {
     bottom: 2em;
@@ -812,8 +961,61 @@ footer .container p {
     gap: 2em;
     position: relative;
   }
-  footer .container p {
-    color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  #Restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 35em;
+    gap: 1em;
+  }
+  #Restaurants h2 {
+    position: absolute;
+    bottom: -4em;
+    left: 20em;
+    line-height: 0;
+  }
+  .menu__header {
+    position: absolute;
+    left: 2em;
+    bottom: 29em;
+  }
+  .menu__content {
+    width: 60em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: -8em;
+  }
+  .menu__card {
+    width: 20em;
+    font-size: small;
+  }
+  .menu__subtitle {
+    gap: -5em;
+    width: 19em;
+  }
+  .menu__button {
+    position: absolute;
+    top: 27em;
+    left: 24em;
+    margin: 0 auto;
   }
 }
 
@@ -869,7 +1071,7 @@ footer .container p {
     left: 50em;
   }
   .menu__content {
-    width: 96%;
+    width: 85em;
     height: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -912,6 +1114,16 @@ footer .container p {
             justify-content: center;
     gap: 10em;
     margin-right: 5em;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .menu__content {
+    width: 155em;
+  }
+  .menu__button {
+    position: absolute;
+    right: 50em;
   }
 }
 /*# sourceMappingURL=main.css.map */
